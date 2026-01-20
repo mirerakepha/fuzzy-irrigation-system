@@ -1,5 +1,7 @@
 #  Fuzzy Logic–Based Irrigation Decision System
 
+direct link - https://fuzzy-irrigation-system-nxbxyakfwy4q6vcvmnv4g6.streamlit.app/
+
 ## Project Overview
 This project implements a **fuzzy logic–based irrigation control system** designed to help farmers determine the optimal amount of water to irrigate crops. Traditional irrigation systems rely on precise threshold values, which are often unreliable because environmental factors such as **soil moisture**, **temperature**, and **humidity** are inherently imprecise.
 
