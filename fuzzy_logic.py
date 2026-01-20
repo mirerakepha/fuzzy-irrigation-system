@@ -40,15 +40,15 @@ rules = [
 ]
 
 
-# Build control system
 irrigation_ctrl = ctrl.ControlSystem(rules)
-irrigation_sim = ctrl.ControlSystemSimulation(irrigation_ctrl)
-
 
 def get_irrigation_level(soil, temp, hum):
+    irrigation_sim = ctrl.ControlSystemSimulation(irrigation_ctrl)
+
     irrigation_sim.input['soil_moisture'] = soil
     irrigation_sim.input['temperature'] = temp
     irrigation_sim.input['humidity'] = hum
 
     irrigation_sim.compute()
+
     return irrigation_sim.output['irrigation']
